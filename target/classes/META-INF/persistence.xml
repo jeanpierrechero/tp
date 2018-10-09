@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>clases.UsuarioRoles</class>
+    <class>clases.Comandos</class>
+    <class>clases.Roles</class>
+    <class>clases.UsuarioDispositivos</class>
+    <class>clases.Dispositivos</class>
+    <class>clases.Sensores</class>
+    <class>clases.ComandosAdaptadores</class>
+    <class>clases.Reglas</class>
+    <class>clases.Domicilios</class>
+    <class>clases.ActuadoresComandos</class>
+    <class>clases.Categorias</class>
+    <class>clases.Adaptadores</class>
+    <class>clases.Estados</class>
+    <class>clases.Fabricantes</class>
+    <class>clases.Usuarios</class>
+    <class>clases.EstadosDispositivos</class>
+    <class>clases.Actuadores</class>
+    <class>clases.Transformadores</class>
+    <class>ar.com.sge.geografia.Zonas</class>
+    <class>ar.com.sge.geografia.ZonaTransformadores</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/dds"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>
